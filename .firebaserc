@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "expert-flow": {
+      "hosting": {
+        "tech-quiz-web-ng": [
+          "expert-flow"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "expert-flow"
+  }
+}
