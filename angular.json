@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "tech-quiz-web-ng:build:production",
+            "firebaseProject": "expert-flow",
+            "firebaseHostingSite": "expert-flow"
+          }
         }
       }
     }
