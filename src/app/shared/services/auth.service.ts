@@ -10,8 +10,9 @@ export class AuthService {
   constructor(
     public afAuth: AngularFireAuth // Inject Firebase auth service
   ) {}
+
   // Sign in with Google
-  GoogleAuth() {
+  GoogleAuth(): Promise<void> {
     return this.AuthLogin(new GoogleAuthProvider());
   }
   // Auth logic to run auth providers
