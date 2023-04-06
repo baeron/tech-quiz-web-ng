@@ -16,6 +16,8 @@ import { AuthService } from './shared/services/auth.service';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     providePerformance(() => getPerformance())
   ],
   providers: [
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
     ScreenTrackingService,
     UserTrackingService,
     AuthService
